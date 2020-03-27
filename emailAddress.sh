@@ -7,7 +7,7 @@ echo "Validate Email address with a regex"
 echo " "
 read -p "Enter Email address: " email
 
-emailValidate="^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@$"
+emailValidate="^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*@[0-9a-zA-Z]$"
 if [[ $email =~ $emailValidate ]]
 then
 	echo Yes
